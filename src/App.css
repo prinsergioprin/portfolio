@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --clr-background: #180315;
+  --clr-focus: #ffae42;
+  --clr-neutral: #e5e0d9;
 }
 
-.App-header {
-  background-color: #282c34;
+.app {
+  background-color: var(--clr-background);
+  width: 100%;
   min-height: 100vh;
+}
+
+.greeting-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.greeting-left {
+  color: var(--clr-focus);
+  font-family: "Lilita One", sans-serif;
+  font-size: 3.13rem;
+  letter-spacing: 1px;
+  margin: 4.25rem 0 0 10rem;
+  height: 25%;
+  width: 40%;
+  overflow: hidden;
+  border-right: 0.25rem solid var(--clr-focus);
+  white-space: nowrap;
+  animation: typing 3s steps(18, end), blink-caret 1s step-end infinite;
 }
 
-@keyframes App-logo-spin {
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 40%;
   }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--clr-focus);
+  }
+}
+
+.greeting-right {
+  display: flex;
+  flex-shrink: 0;
+  width: 54%;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10rem;
+  position: sticky;
+}
+
+.greeting-divider {
+  border: 0;
+  height: 4px;
+  width: 60%;
+  margin-top: 4.25rem;
+  background-color: var(--clr-focus);
+}
+
+.greeting-text {
+  color: var(--clr-neutral);
+  font-weight: 500;
+  margin-top: 5rem;
+  font-size: 1.75rem;
+  width: 60%;
+}
+
+.project-container {
+  background-color: var(--clr-neutral);
+  width: 100%;
+  height: 75rem;
+  border-radius: 175% / 25%;
+  margin-top: 6.19rem;
+}
+
+.project-heading {
+  font-size: 2.13rem;
+  font-weight: 600;
+  color: var(--clr-background);
+  text-align: center;
+  padding-top: 4.5rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-left {
+  margin-left: 10rem;
+}
+
+.contact-right {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.contact-heading {
+  color: var(--clr-focus);
+  font-family: "Lilita One", sans-serif;
+  font-size: 3.13rem;
+  letter-spacing: 1px;
+  margin-top: 7.75rem;
+}
+
+.email {
+  font-size: 1.25rem;
+  color: var(--clr-neutral);
+  font-weight: 500;
+}
+
+.contact-divider {
+  border: 0;
+  height: 4px;
+  width: 60%;
+  margin-bottom: 4.25rem;
+  background-color: var(--clr-focus);
+}
+
+.headshot {
+  width: 25%;
+  border-radius: 500px;
+  margin-top: 4.56rem;
 }
