@@ -1,0 +1,29 @@
+/* .project-card {
+  width: clamp(24rem, 10vw, 31.88rem);
+} */
+
+.project-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  /* width: clamp(24rem, 30vw, 31.88rem); */
+  width: 100%;
+}
+
+.project-icons img {
+  width: clamp(1.4rem, 3vw, 2rem);
+}
+
+.project-image {
+  /* width: clamp(24rem, 30vw, 31.88rem); */
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+.project-description {
+  font-size: clamp(0.85rem, 2vw, 1.13rem);
+  font-weight: 500;
+  padding-top: 0.5rem;
+  /* width: clamp(24rem, 30vw, 31.88rem); */
+  width: 100%;
+}
