@@ -177,6 +177,23 @@ body {
 @media (max-width: 768px) {
   .greeting-left {
     white-space: normal;
+    margin-left: 2rem;
+    width: 40%;
+    animation: none;
+    border-right: none;
+  }
+
+  .greeting-right {
+    width: 48%;
+    margin-right: 2rem;
+  }
+
+  .greeting-text {
+    width: 95%;
+  }
+
+  .greeting-divider {
+    width: 95%;
   }
 
   .contact-divider {
